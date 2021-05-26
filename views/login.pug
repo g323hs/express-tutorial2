@@ -1,13 +1,9 @@
 html
-	head
-	title Login
-body
-	p Login
-	form(action = "https://express-tutorial3.glitch.me/login" method = "POST")
-		input(name = "id" type = "text" required placeholder = "User ID")
-		input(name = "password" type = "password" required placeholder = "Password")
-		button(type = "Submit") Log in
-	if(message)
-		h4 #{message}
-	if(invalid)
-		a(href='https://express-tutorial3.glitch.me/signup') Signup
+    head
+        title Protected page
+    body
+        p Protected page
+        div Hey #{id}, How are you doing today?
+        iframe(width='100%', height='80%', src="https://editor.p5js.org/g323hs/embed/N9A9J0tsB")
+        p
+            a(href='https://express-tutorial3.glitch.me/logout') Logout
